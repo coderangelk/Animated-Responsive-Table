@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Responsive Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="table-container">
+    <table class="animated-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-name="John Doe" data-email="john.doe@example.com" data-role="Admin" data-status="Active">
+          <td>1</td>
+          <td>John</td>
+          <td>john@example.com</td>
+          <td>Admin</td>
+          <td class="status active">Active</td>
+        </tr>
+        <tr data-name="Jane Smith" data-email="jane.smith@example.com" data-role="Editor" data-status="Inactive">
+          <td>2</td>
+          <td>Jane</td>
+          <td>jane@example.com</td>
+          <td>Editor</td>
+          <td class="status inactive">Inactive</td>
+        </tr>
+        <tr data-name="Sam Wilson" data-email="sam.wilson@example.com" data-role="Viewer" data-status="Active">
+          <td>3</td>
+          <td>Sam </td>
+          <td>sam@example.com</td>
+          <td>Viewer</td>
+          <td class="status active">Active</td>
+        </tr>
+        <tr data-name="Lisa Brown" data-email="lisa.brown@example.com" data-role="Admin" data-status="Pending">
+          <td>4</td>
+          <td>Lisa </td>
+          <td>lisa@example.com</td>
+          <td>Admin</td>
+          <td class="status pending">Pending</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="details-card" id="details-card">
+    <div class="card-content">
+      <h3>Details</h3>
+      <p><strong>Name:</strong> <span id="card-name"></span></p>
+      <p><strong>Email:</strong> <span id="card-email"></span></p>
+      <p><strong>Role:</strong> <span id="card-role"></span></p>
+      <p><strong>Status:</strong> <span id="card-status"></span></p>
+      <button id="close-card">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
